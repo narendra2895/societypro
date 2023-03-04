@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block data %}
+{% load static %}
+
+<form class="insert_service_record"  action="insert_service_record" method="post">
+    {% csrf_token %}
+    <input type="text" placeholder="Service name" name="sname" required>
+    <input type="text" placeholder="Service description" name="sdesc" required>
+
+    <textarea id="" cols="40" rows="20" placeholder="Service details" name="sdetails" required></textarea>
+    <input type="submit" class="btn-contact" name="submit" value="Submit">
+</form>
+
+
+
+{% endblock %}

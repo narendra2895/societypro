@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block data %}
+{% load static %}
+
+<div class="about-info-container">
+    <div class="aboutinfo1">
+        <img src="{% static 'images/work1.jpg' %}" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor ducimus iusto omnis odit consectetur mollitia
+            unde ad libero alias placeat iure ipsa, quae accusantium sunt, aperiam ex, animi magnam voluptas?
+            Perferendis, facere blanditiis. Laboriosam ab enim delectus eveniet illum quidem quas distinctio unde.
+            Dolores, architecto? Corrupti vero excepturi porro. Ratione.</p>
+    </div>
+    <div class="aboutinfo2">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor ducimus iusto omnis odit consectetur mollitia
+            unde ad libero alias placeat iure ipsa, quae accusantium sunt, aperiam ex, animi magnam voluptas?
+            Perferendis, facere blanditiis. Laboriosam ab enim delectus eveniet illum quidem quas distinctio unde.
+            Dolores, architecto? Corrupti vero excepturi porro. Ratione.</p>
+            <img src="{% static 'images/work2.jpg' %}" alt="">
+    </div>
+    <div class="team-info">
+        <h1>Our team</h1>
+        <div class="team-card-container">
+            <div class="team-card">
+                <h2>Name</h2>
+                <img src="{% static 'images/woman1.jpg' %}" alt="">
+                <h4>position</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore suscipit atque consequatur adipisci sit amet quis praesentium quos neque dolorum!</p>
+            </div>
+            <div class="team-card">
+                <h2>Name</h2>
+                <img src="{% static 'images/woman2.jpg' %}" alt="">
+                <h4>position</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore suscipit atque consequatur adipisci sit amet quis praesentium quos neque dolorum!</p>
+            </div>
+            <div class="team-card">
+                <h2>Name</h2>
+                <img src="{% static 'images/woman1.jpg' %}" alt="">
+                <h4>position</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore suscipit atque consequatur adipisci sit amet quis praesentium quos neque dolorum!</p>
+            </div>
+        </div>
+        <a href="{% url 'index' %}#contact" class="btn btn-primary" style="width: max-content;margin: 0 auto;">Reach Us</a>
+    </div>
+</div>
+
+
+{% endblock %}

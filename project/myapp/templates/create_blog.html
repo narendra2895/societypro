@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block data %}
+{% load static %}
+
+<form class="create_blog"  action="create_blog" method="post">
+    {% csrf_token %}
+    <input type="text" placeholder="Blog title" name="btitle" required>
+    <textarea id="" cols="40" rows="20" placeholder="content goes here.." name="bcontent" required></textarea>
+    <input type="date" placeholder="Publish date" name="bdate" required>
+    
+    <input type="submit" class="btn-contact" name="submit" value="Submit">
+</form>
+
+
+
+{% endblock %}

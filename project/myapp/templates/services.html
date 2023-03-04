@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block data %}
+{% load static %}
+
+<div class="services-page-container">
+    {% for d in data %}
+    <div class="service-info-card">
+        <img src="{% static 'images/headset.png' %}" width="50px" alt="">
+        <h1>{{d.sname}}</h1>
+        <h3>{{d.sdesc}}</h3>       
+        <p>{{d.sdetails}}</p>
+    </div>
+   {% endfor %}
+</div>
+
+
+
+{% endblock %}

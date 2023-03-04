@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+
+{% block data %}
+{% load static %}
+<div class="hero">
+    <div class="left-block">
+        <h1> Society <br> Pro <img src="{% static 'images/plus.png' %}" alt=""></h1>
+        <h3>Housing Society<br> Consultant</h3>
+    </div>
+    <div class="right-block">
+        <img src="{% static 'images/logo.png' %}" class="back-logo" alt="">
+    </div>
+</div>
+<div class="about">
+    <h1>About Us</h1>
+    <div class="about-container1">
+
+        <div class="image">
+            <img src="{% static 'images/woman.png' %}" alt="">
+        </div>
+        <div class="paragraph">
+            <p> Society Pro was established in the year 2006 as "Society Plus" with a aim of providing a wide range of services
+                of Accounting, Auditing & Management of Co-operative Housing Societies.With growing business and changing time, we decided to rename the organization.
+                 We have a team of
+                Management Consultants with very vast knowledge, professional experience and serving its clients and
+                specialized in the field of Co-operative Housing Computerized, Accounting Auditing, Statutory Records.
+                Solving all type of Problems in Co-operative Housing Societies, we undertake assignments with a
+                commitment and make all efforts to deliver Professional & Quality Services in a short time. We are
+                committed to provide tailor made services to the individual needs of each client. Our team provides
+                different range of Services, Expertise & Experience. Our team is backed & directed by Experience
+                Personality <strong>"Mrs. Ashwini Pravin Bulakh" </strong> 
+            </p>
+            
+            <p >
+                “Co-operative Housing Society Procedure”. Thus we provide appropriate solution for Co-operative Housing
+                Society Management to rely upon. Our core expertise lies in Internal compliance audit, Computerized
+                Accounting, Auditing (internal & external), Legal Compliance, All types of Agreements, Flat Transfer
+                Documents, Re-development/ Construction.
+            </p>
+
+
+
+            <a class="btn btn-primary" href="about">See more</a>
+
+        </div>
+    </div>
+
+
+</div>
+
+<div class="services">
+    <h1>Services</h1>
+    <div class="container-card">
+        <div class="card">
+            <div class="img"> <img src="{% static 'images/headset.png' %}" width="50px" alt=""> </div>
+            <h2>Service 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, molestiae voluptas? Rem velit odit ipsum
+                necessitatibus possimus consequuntur nemo ratione reiciendis veritatis architecto quis, ut magnam
+                provident molestiae, doloribus fuga.
+            </p>
+            <a href="{% url 'services' %}" class="inline-btn">See more</a>
+        </div>
+        <div class="card">
+            <div class="img"> <img src="{% static 'images/headset.png' %}" width="50px" alt=""> </div>
+            <h2>Service 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, molestiae voluptas? Rem velit odit ipsum
+                necessitatibus possimus consequuntur nemo ratione reiciendis veritatis architecto quis, ut magnam
+                provident molestiae, doloribus fuga.
+            </p>
+            <a href="{% url 'services' %}" class="inline-btn">See more</a>
+        </div>
+        <div class="card">
+            <div class="img"> <img src="{% static 'images/headset.png' %}" width="50px" alt=""> </div>
+            <h2>Service 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, molestiae voluptas? Rem velit odit ipsum
+                necessitatibus possimus consequuntur nemo ratione reiciendis veritatis architecto quis, ut magnam
+                provident molestiae, doloribus fuga.
+            </p>
+            <a href="{% url 'services' %}" class="inline-btn">See more</a>
+        </div>
+        <div class="card">
+            <div class="img"> <img src="{% static 'images/headset.png' %}" width="50px" alt=""> </div>
+            <h2>Service 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, molestiae voluptas? Rem velit odit ipsum
+                necessitatibus possimus consequuntur nemo ratione reiciendis veritatis architecto quis, ut magnam
+                provident molestiae, doloribus fuga.
+            </p>
+            <a href="{% url 'services' %}" class="inline-btn">See more</a>
+        </div>
+        <div class="card">
+            <div class="img"> <img src="{% static 'images/headset.png' %}" width="50px" alt=""> </div>
+            <h2>Service 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, molestiae voluptas? Rem velit odit ipsum
+                necessitatibus possimus consequuntur nemo ratione reiciendis veritatis architecto quis, ut magnam
+                provident molestiae, doloribus fuga.
+            </p>
+            <a href="{% url 'services' %}" class="inline-btn">See more</a>
+        </div>
+        <div class="card">
+            <div class="img"> <img src="{% static 'images/headset.png' %}" width="50px" alt=""> </div>
+            <h2>Service 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, molestiae voluptas? Rem velit odit ipsum
+                necessitatibus possimus consequuntur nemo ratione reiciendis veritatis architecto quis, ut magnam
+                provident molestiae, doloribus fuga.
+            </p>
+            <a href="{% url 'services' %}" class="inline-btn">See more</a>
+        </div>
+
+    </div>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="four col-md-3">
+                <div class="counter-box colored">
+                    <i class="fa fa-thumbs-o-up"></i>
+                    <span class="counter">2147</span>
+                    <p>Happy Customers</p>
+                </div>
+            </div>
+            <div class="four col-md-3">
+                <div class="counter-box">
+                    <i class="fa fa-group"></i>
+                    <span class="counter">3275</span>
+                    <p>Registered Members</p>
+                </div>
+            </div>
+            <div class="four col-md-3">
+                <div class="counter-box">
+                    <i class="fa  fa-shopping-cart"></i>
+                    <span class="counter">289</span>
+                    <p>Available Societies</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact" id="contact">
+    <h1>Contact Us</h1>
+    <form action="create_record" method="post">
+        {% csrf_token %}
+        <input type="text" placeholder="Your name" name="cname" required>
+        <input type="email" placeholder="Your email" name="cemail" required>
+        <input type="tel" placeholder="Your phone" name="cphone" required>
+        <select name="cservice" required>
+            <option value="Service1">Service1</option>
+            <option value="Service2">Service2</option>
+            <option value="Service3">Service3</option>
+            <option value="Service4">Service4</option>
+        </select>
+        <textarea id="" cols="30" rows="10" placeholder="Your message" name="cmessage" required></textarea>
+        <input type="submit" class="btn-contact" name="submit" value="Submit">
+    </form>
+
+
+</div>
+
+
+{% endblock %}
